@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A school project about Anne Frank, her diary, and her legacy.">
+<title>The Diary of Anne Frank</title>
+<style>
+:root{--ink:#29251f;--paper:#f3ecdf;--paper-dark:#e4d8c4;--accent:#8a6246;--muted:#766b5d;--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 7%;background:rgba(41,37,31,.97);color:var(--white)}
+.brand{font-size:.9rem;letter-spacing:.16em;font-weight:bold}nav{display:flex;flex-wrap:wrap;gap:1.1rem}nav a{color:#f5ead8;text-decoration:none;font:.78rem Arial,sans-serif}nav a:hover{color:#d6b895}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:5rem 1.5rem;background:linear-gradient(rgba(31,27,23,.63),rgba(31,27,23,.72)),radial-gradient(circle at 50% 20%,#9c8062,#4a3d30 65%,#29251f);color:#fff8ed}
+.hero-inner{max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:.28em;font:.72rem Arial,sans-serif;color:#e1c7a7}h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.98;font-weight:normal;margin:1.2rem 0}.hero p{max-width:620px;margin:1rem auto 2rem;color:#eee1d0;font-size:1.1rem}
+.button{display:inline-block;padding:.8rem 1.3rem;border:1px solid #d7bd9e;color:#fff8ed;text-decoration:none;font:.78rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.button:hover{background:#d7bd9e;color:var(--ink)}
+main{max-width:1050px;margin:auto;padding:0 1.5rem}section{padding:5rem 0;border-bottom:1px solid #d9cbb7;scroll-margin-top:70px}.section-label{color:var(--accent);text-transform:uppercase;letter-spacing:.2em;font:.72rem Arial,sans-serif}h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;font-weight:normal;margin:.6rem 0 1.4rem}h3{font-size:1.35rem;font-weight:normal;margin:0 0 .5rem}.intro{max-width:760px;font-size:1.12rem;color:#51483e}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start}.note{background:var(--paper-dark);padding:2rem;border-left:3px solid var(--accent)}.note p{margin-bottom:0}
+.timeline{margin-top:2rem;border-left:1px solid #b9a58b;padding-left:1.5rem}.event{position:relative;padding:0 0 1.7rem}.event:before{content:"";position:absolute;left:-1.83rem;top:.55rem;width:.55rem;height:.55rem;border-radius:50%;background:var(--accent)}.year{color:var(--accent);font:bold .8rem Arial,sans-serif;letter-spacing:.08em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.card{background:var(--white);padding:1.5rem;border:1px solid #e1d6c6}.number{color:var(--accent);font:1.8rem Georgia,serif}
+.quote-panel{background:var(--ink);color:#f7ecdc;padding:3rem;text-align:center;margin:2rem 0}.quote-panel p{max-width:700px;margin:auto;font-size:1.45rem}.quote-panel small{display:block;margin-top:1rem;color:#d5c2aa;font:.72rem Arial,sans-serif;letter-spacing:.1em}
+.sources a{color:var(--accent)}footer{background:var(--ink);color:#e9ddcc;text-align:center;padding:2rem 1rem;font:.8rem Arial,sans-serif}.small{color:var(--muted);font-size:.9rem}
+@media(max-width:720px){.topbar{align-items:flex-start;flex-direction:column}nav{gap:.7rem}.two-col,.cards{grid-template-columns:1fr}section{padding:3.5rem 0}.quote-panel{padding:2rem 1.2rem}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">THE DIARY OF ANNE FRANK</div><nav aria-label="Main navigation">
+<a href="#biography">Biography</a><a href="#history">History</a><a href="#diary">The Diary</a><a href="#legacy">Legacy</a><a href="#sources">Sources</a>
+</nav></header>
+<div class="hero" id="home"><div class="hero-inner"><div class="eyebrow">Memory · History · Hope</div><h1>The Diary<br>of Anne Frank</h1><p>The story of a young girl who wrote about her life while she and her family hid during the Nazi persecution.</p><a class="button" href="#biography">Explore the story</a></div></div>
+<main>
+<section id="biography"><div class="section-label">01 — The person</div><div class="two-col"><div><h2>Who Was Anne Frank?</h2><p class="intro">Anne Frank was a Jewish girl born in Frankfurt, Germany, on June 12, 1929. She is known for the diary she wrote during World War II, in which she described her thoughts and experiences while living in hiding.</p><p>In 1933, her family moved to the Netherlands to escape the Nazi regime. As persecution of Jewish people increased, Anne, her family, and four other people went into hiding in a secret annex in Amsterdam.</p></div><aside class="note"><h3>An Important Fact</h3><p>Anne received her diary as a gift for her thirteenth birthday in 1942. She wrote about everyday life, her emotions, her dreams, and the events happening around her.</p></aside></div></section>
+<section id="history"><div class="section-label">02 — Historical context</div><h2>A Life During Wartime</h2><p class="intro">World War II lasted from 1939 to 1945. Under the Nazi regime, millions of people were persecuted and murdered, especially Jewish people, in the genocide known as the Holocaust.</p><div class="timeline">
+<div class="event"><div class="year">1929</div><h3>Anne Is Born</h3><p>She is born on June 12 in Frankfurt, Germany.</p></div>
+<div class="event"><div class="year">1933</div><h3>The Family Moves</h3><p>The Frank family moves to Amsterdam in the Netherlands.</p></div>
+<div class="event"><div class="year">1942</div><h3>Going into Hiding</h3><p>The family moves into the Secret Annex. Anne begins writing in her diary.</p></div>
+<div class="event"><div class="year">1944</div><h3>They Are Discovered</h3><p>The people in hiding are arrested and deported.</p></div>
+<div class="event"><div class="year">1945</div><h3>Anne Frank Dies</h3><p>Anne dies at Bergen-Belsen concentration camp. She was 15 years old.</p></div>
+<div class="event"><div class="year">1947</div><h3>The Diary Is Published</h3><p>Her father, Otto Frank, the only surviving member of the immediate family, helps publish the diary in the Netherlands.</p></div>
+</div></section>
+<section id="diary"><div class="section-label">03 — Her testimony</div><h2>Anne's Diary</h2><p class="intro">The diary helps readers understand what life was like in hiding and what Anne thought during those years. It is not only a record of wartime events: it also explores growing up, living with others, having hopes, and discovering who you are.</p><div class="cards">
+<article class="card"><div class="number">I</div><h3>Everyday Life</h3><p>She describes the rules of hiding, living together, and the challenges of being unable to go outside freely.</p></article>
+<article class="card"><div class="number">II</div><h3>Her Thoughts</h3><p>She expresses emotions, disagreements, fears, ideas, and hopes typical of a teenager.</p></article>
+<article class="card"><div class="number">III</div><h3>Writing</h3><p>Writing became a way for Anne to express her experiences and preserve her memories.</p></article>
+</div><div class="quote-panel"><p>Anne Frank's diary reminds us of the importance of listening to people's stories and preserving the memory of the past.</p><small>PROJECT REFLECTION</small></div></section>
+<section id="annex"><div class="section-label">04 — The place</div><h2>The Secret Annex</h2><div class="two-col"><div><p>The hiding place was located at the back of the building where Otto Frank worked, at 263 Prinsengracht in Amsterdam. Its entrance was concealed behind a movable bookcase.</p><p>Eight people lived there for approximately two years. Some of Otto Frank's employees helped them by bringing food, news, and other necessary supplies.</p></div><aside class="note"><h3>Why Is It Important?</h3><p>The site is preserved as part of the Anne Frank House, a museum that helps visitors understand the history of the people who hid there and the Nazi persecution.</p></aside></div></section>
+<section id="legacy"><div class="section-label">05 — Her legacy</div><h2>Why Does Her Story Still Matter?</h2><p class="intro">Anne Frank's diary became one of the best-known testimonies of the Holocaust. Her story helps people remember the victims of Nazi persecution and reflect on discrimination, hatred, and human rights.</p><p>Reading her story encourages us to value freedom, respect differences, and recognize that behind historical events were real people with families, dreams, and hopes for the future.</p></section>
+<section id="sources" class="sources"><div class="section-label">06 — Learn more</div><h2>Sources</h2><ul><li><a href="https://www.annefrank.org/en/anne-frank/" target="_blank" rel="noopener">Anne Frank House — Anne Frank</a></li><li><a href="https://encyclopedia.ushmm.org/content/en/article/anne-frank" target="_blank" rel="noopener">United States Holocaust Memorial Museum — Anne Frank</a></li></ul><p class="small">School project. The information is summarized and written for educational purposes. No lengthy passages from the diary are reproduced.</p></section>
+</main>
+<footer><p>THE DIARY OF ANNE FRANK</p><p>A project to remember, learn, and reflect.</p><p>© <span id="year"></span> · School project</p></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body></html>
